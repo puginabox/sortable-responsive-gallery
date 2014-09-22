@@ -1,0 +1,35 @@
+
+
+
+
+
+//---------------------- Vendor Dependencies ------------|
+@import "compass";
+@import "compass/reset";
+@import "susy";
+
+
+//---------------------- Authored Dependencies ----------|
+@import "variables";
+@import "colors";
+@import "fonts";
+@import "mixins";
+@import "base";
+@import "layout";
+@import "modules";
+
+@import "styles";
+
+//----------------------  Patterns ----------------------|
+@import "patterns/tabs";
+@import "patterns/modals";
+
+//---------------------- DOM Sections -------------------|
+@import "dom/header";
+@import "dom/footer";
+@import "dom/main-nav";
+@import "dom/content";
+
+
+ //----- Last-minute edits (add to above later) ---------|
+ @import "_shame.scs";

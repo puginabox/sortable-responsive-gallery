@@ -1,0 +1,107 @@
+
+/*======================= @BASE =======================*/
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+	-webkit-font-smoothing: antialiased;
+ }
+html, body 	{
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+
+	width: 100%;
+	height:  auto;
+	margin: 0 auto;
+	font-family: 'Lato', sans-serif; 
+	color: $graphite;
+}
+/* =================== headings ===================*/
+p, li {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+	font-size:15px;
+	text-align: justify;
+	padding: 0.5em;
+	color: $graphite;
+	background: $white-transparent;	
+		@include breakpoint(mobile) {
+			background: $white-transparent;
+			font-weight: 200;
+			font-size:11px;
+		}
+		@include breakpoint(tablet) {
+			font-size:14px;
+		}		
+}
+b {
+	padding: 0.5em;
+	font-family: 'Lato', sans-serif; 
+	font-style: italic;
+	font-weight: 500;
+}
+h1, h2, h3, h4, h5 {
+	font-weight: 400;
+	font-family: 'Lato', sans-serif; 
+	letter-spacing: 3px;
+	word-spacing: 1px;
+	padding: 1em;
+	background: $white-transparent;		
+		@include breakpoint(mobile) {
+			padding: 0.3em;		
+		}
+		@include breakpoint(tablet) {
+			padding: 0.5em;
+		}	
+}
+h1 {
+	font-size: 2em;
+	text-align: center;
+	color: $tangerine;
+		@include breakpoint(mobile) {
+			font-size: 1.2em;
+		}
+		@include breakpoint(tablet) {
+			font-size: 1.6em;
+		}		
+}
+h2 {
+	font-size: 1.5em;
+	color: $neonBlue;
+		@include breakpoint(mobile) {
+			font-size: 1em;
+		}
+		@include breakpoint(tablet) {
+			font-size: 1.3em;
+		}		
+}
+h3 {
+	font-size: 1em;
+	color: white;
+}
+h4 {
+	font-size: 1.3em;
+	color: $graphite;
+}
+h5 {
+	font-size: 1.2em;
+	color: $tangerine;
+}
+/*======================= @links=======================*/
+a:link { 
+	font-size: 1.2em;
+	font-family: 'Roboto', sans-serif;	
+	text-decoration: none; 
+	font-weight: bold;
+	color: $neonGreen; 
+	@include breakpoint(mobile) {
+		font-size: 1em;
+	}
+}
+a:visited 	{ text-decoration: none; color: $neonBlue; }
+a:hover 	{ text-decoration: none; color: $coral; }
+a:active 	{ text-decoration: none; color: $coral; }

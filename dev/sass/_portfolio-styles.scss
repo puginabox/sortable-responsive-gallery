@@ -1,0 +1,130 @@
+#portfolio-header h1 {
+    display: none;
+}
+.portfolios {
+    width: 90%;
+    height: auto;
+    margin: 0.1em auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+    @include breakpoint(mobile) {
+        width: 100%;
+    }
+    @include breakpoint(tablet) {
+        width: 90%;
+    }
+}
+.portfolios h1, .portfolios h2 {
+    padding: 0;
+    margin: 0 auto;
+}
+/**************************** @gallery *********************************/
+
+.gallery {
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.gallery .sorting {
+    margin: 0px 0px 15px 0px;
+    padding: 2px 0 10px 0;
+    background-color: $neonBlue;
+    margin: 1em auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.photos, .thumbnail_container {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.gallery .sorting span {
+    padding: 0px 20px 0px 0px;
+    font-style: italic;
+}
+.gallery .sorting div {
+    margin: 10px 0px 10px 10px;
+}
+.gallery .sorting a {
+    color: white;
+    font-size: .85em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 3px 20px 3px 20px;
+}
+.gallery .sorting a:hover {
+    color: $tangerine;
+}
+.gallery .photos .thumbnail_container {
+    position: relative;
+}
+.gallery .photos .thumbnail_container a.thumbnail {
+    position: absolute;
+}
+.gallery .photos .thumbnail_container a.thumbnail img {
+    width: 75px;
+    height: 75px;
+    border: 2px solid $tangerine;
+    border-radius: 100%;
+    @include all-transitions;
+    -webkit-filter: opacity(1);
+    -webkit-filter: opacity(1);
+    -o-filter: opacity(1);
+    filter: opacity(1);
+}
+.gallery .photos .thumbnail_container a.thumbnail img:hover {
+    -webkit-filter: opacity(0.4);
+    -moz-filter: opacity(0.4);
+    -o-filter: opacity(0.4);
+    -ms-filter: opacity(0.4);
+    filter: opacity(0.4);
+}
+.thumbnail_container {
+    background: url(../img/logo-portfolio.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.clear_both {
+    clear: both;
+    line-height: 1px;
+}
+@media screen and (min-width: 50px) and (max-width: 500px) {
+    body {
+        padding: 5px 0px 0px 5px;
+    }
+    .gallery {
+        width: auto;
+        margin-left: 35px;
+    }
+    .gallery .sorting span {
+        display: block;
+        color: #e5aa2c;
+        padding: 0px 0px 20px 0px;
+    }
+    .gallery .sorting a {
+        display: block;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 960px) {
+    .gallery .sorting span {
+        display: block;
+        padding: 0px 0px 20px 0px;
+    }
+    .gallery .sorting a {
+        display: block;
+        width: 35%;
+        float: left;
+        margin-bottom: 5px;
+    }
+}
+@media screen and (min-width: 961px) {
+    .gallery .sorting span {
+        padding: 0px 20px 0px 0px;
+    }
+}

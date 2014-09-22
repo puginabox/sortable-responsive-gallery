@@ -1,0 +1,42 @@
+
+/*======================= @header=======================*/
+header {
+	margin: 1em auto;
+	padding: 0;
+	position: relative;
+	width: 318px;
+	height: 322px;
+	text-align: center;
+    background: url("../img/logo.png") top center no-repeat;
+    	h1 {
+	    	display: none;
+    	}
+	@include breakpoint(mobile) {
+		width: 200px;
+		height: 203px;
+		margin: 0 auto;		
+      background: url("../img/logo[small].png") top center no-repeat;
+    }
+    @include breakpoint(tablet) {
+		width: 250px;
+		height: 253px;
+		margin: 0 auto;			
+		background: url("../img/logo[medium].png") top center no-repeat;
+    }
+    @include breakpoint(large) {
+		width: 400px;
+		height: 400px;    	
+      	background: url("../img/logo[large].png") top center no-repeat;
+    }
+}
+
+
+#portfolio-header {
+	margin: 0 auto;
+	padding: 1em;	
+	left: 0;
+	right: 0;
+	width: 200px;
+	height: 200px;  	
+	background: url("../img/logo-portfolio.png") top center no-repeat;
+}
